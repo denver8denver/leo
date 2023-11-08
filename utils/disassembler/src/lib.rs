@@ -22,6 +22,7 @@ use std::str::FromStr;
 type CurrentNetwork = Testnet3;
 
 use leo_ast::{FunctionStub, Identifier, ProgramId, Struct, Stub};
+use leo_errors::UtilError;
 
 pub fn disassemble<N: Network, Instruction: InstructionTrait<N>, Command: CommandTrait<N>>(
     program: ProgramCore<N, Instruction, Command>,
@@ -53,9 +54,11 @@ pub fn disassemble<N: Network, Instruction: InstructionTrait<N>, Command: Comman
     }
 }
 
-pub fn disassemble_from_str(program: String) -> Stub {
-    let program = Program::<CurrentNetwork>::from_str(&program);
-    disassemble(program.expect("Failed to parse program")) // TODO: Handle error
+pub fn disassemble_from_str(program: String) -> Result<Stub, UtilError> {
+    match Program::<CurrentNetwork>::from_str(&program) {
+        Ok(p) => Ok(disassemble(p)),
+        Err(_) => Err(UtilError::snarkvm_parsing_error(Default::default())),
+    }
 }
 
 #[cfg(test)]
