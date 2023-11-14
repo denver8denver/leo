@@ -443,7 +443,7 @@ Dmytro Haiov
 </b></sub></a><br /><a href="https://github.com/dmytrohayov/tictactoe.git" title="Tutorial">✅</a></td>
           <td align="center" valign="top" width="14.28%"><a href="https://github.com/Annnnnnnnnnna"><img src="https://avatars.githubusercontent.com/u/40041762?s=80&v=4?s=100" width="100px;" alt="Annnnnnnnnnna"/><br /><sub><b>
 Annnnnnnnnnna</b></sub></a><br /><a href="https://github.com/Annnnnnnnnnna/tictactoe" title="Tutorial">✅</a></td>
-      </tr>
+      </tr> 
       <tr>
           <td align="center" valign="top" width="14.28%"><a href="https://github.com/turchmanovich101"><img src="https://avatars.githubusercontent.com/u/68894538?s=80&v=4?s=100" width="100px;" alt="turchmanovich101"/><br /><sub><b>
 turchmanovich101</b></sub></a><br /><a href="https://github.com/turchmanovich101/tictactoe2" title="Tutorial">✅</a></td>
