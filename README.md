@@ -11,7 +11,7 @@
     <a href="https://GitHub.com/AleoHQ/leo"><img src="https://img.shields.io/badge/contributors-29-ee8449"/></a>
 </p>
 <div id="top"></div>
-Leo is a functional, statically-typed programming language built for writing private applications.
+Leo is a functional, statically-typed programming language built for writing private applications. 
 
 ## <a name='TableofContents'></a>Table of Contents
 
